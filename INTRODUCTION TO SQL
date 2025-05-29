@@ -1,0 +1,16 @@
+What is DBMS?
+A DBMS is software that allows users to create, manage, and interact with databases.
+
+###Types of DBMS:
+****Relational DBMS (RDBMS):
+Data is stored in tables.
+Examples: MySQL, Oracle.
+****NoSQL DBMS:
+Data is stored in formats such as documents or key-value pairs.
+Examples: MongoDB, Cassandra.
+****Hierarchical DBMS:
+Data is organized in a tree-like structure.
+Example: IBM DBMS.
+****Network DBMS:
+Data is represented in a graph structure.
+Example: Integrated Data Store (IDS).
