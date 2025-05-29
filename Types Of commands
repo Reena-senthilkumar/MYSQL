@@ -1,0 +1,3 @@
+DDL(data definition language):CREATE,ALTER,DROP,TRUNCATE
+DML(data manipulation language):INSERT,UPDATE,DELETE
+DQL(data query language):SELECT
