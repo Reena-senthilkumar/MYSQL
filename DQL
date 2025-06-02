@@ -1,0 +1,31 @@
+🔹 What is DQL?
+DQL is a subset of SQL used to query and retrieve data from databases. It mainly involves the use of the SELECT statement.
+
+
+🔹 Common DQL Command:
+SELECT
+It is the only command under DQL.
+
+Syntax:
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+🔹 Examples:
+1. Select all columns:
+SELECT * FROM employees;
+
+2. Select specific columns
+SELECT name, salary FROM employees;
+
+3. Use conditions:
+SELECT * FROM employees
+WHERE department = 'HR';
+
+4. Use functions:
+SELECT AVG(salary) FROM employees;
+
+5. Use GROUP BY:
+SELECT department, COUNT(*) 
+FROM employees
+GROUP BY department;
