@@ -4,7 +4,7 @@ DQL is a subset of SQL used to query and retrieve data from databases. It mainly
 
 🔹 Common DQL Command:
 SELECT
-It is the only command under DQL.
+It is the only command under DQL 
 
 Syntax:
 
