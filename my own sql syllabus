@@ -1,0 +1,30 @@
+Day 1:
+1.	Introduction to DBMS
+•	What is DBMS?
+•	Examples
+•	Types of DBMS
+•	SQL VS NOSQL
+a.	
+2.	MYSQL
+•	What is SQL?
+•	Commands in SQL
+•	Data Base Creation in command prompt  and related command
+•	DDL(Create,alter,Drop,truncate) 
+•	DML(Insert,delete,Update)
+•	Dql(select)
+
+Day 2:
+•	Some key words: Null,      IS NULL,where,order by,group by
+•	Aggregate functions:sum(),count(),avg(),min(),max()
+
+Day 3:
+Some commands using these 
+•	between 
+•	or 
+•	in
+•	AND
+•	limit 1
+•	Having
+•	Distinct
+•	Join
+•	like
