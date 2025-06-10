@@ -1,10 +1,12 @@
+BEFORE STARTING MY SQL HAVE TO DOWNLOAD MY SQL SOFTWARE IN LAPTOP 
+
+
 Day 1:
 1.	Introduction to DBMS
 •	What is DBMS?
 •	Examples
 •	Types of DBMS
 •	SQL VS NOSQL
-a.	
 2.	MYSQL
 •	What is SQL?
 •	Commands in SQL
@@ -28,3 +30,22 @@ Some commands using these
 •	Distinct
 •	Join
 •	like
+
+Day 4:
+• String functions:UPPER(),LOWER(), CONCAT()
+• date function:NOW(), DATE(NOW()),DATEDIFF()
+• Filtering conditions,Case
+• Types of joins: INNNER JOIN(), LEFT JOIN(), RIGHT JOIN(),SELF JOIN()
+
+Day5:
+• Subqueries using WHERE,ANY,ALL,FROM, SELECT, EXISTS 
+
+Day 6:
+• Constraints :NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT 
+
+Day 7:
+• Set operation: UNION, UNION ALL,MINUS, INTERSECT 
+• Index
+• Views
+• Transction: BEGIN/ START TRANSACTION,ROLLBACK, COMMIT,SAVE POINT
+
