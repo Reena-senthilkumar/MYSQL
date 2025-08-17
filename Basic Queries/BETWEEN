@@ -1,0 +1,9 @@
+ Select * from student where marks between 65 and 100; --print between assigned data
++-------+-------+------+
+| name   | marks | dept |
++--------+-------+------+
+| barath |    67 | CSE  |
+| venkat |    89 | ECE  |
+| karthi |    89 | ECE  |
++--------+-------+------+
+3 rows in set (0.01 sec)
