@@ -1,0 +1,4 @@
+    WHERE	                           HAVING
+Before Grouping	                  After Grouping
+No aggregate Function           	Aggregate Function
+First execution	                  After execution
