@@ -1,4 +1,5 @@
 --##CREATE: That is use to create a table or database
+
 --For database creation we can use like: 
                    CREATE DATABASE students;
                           -- or
