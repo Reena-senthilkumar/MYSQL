@@ -1,0 +1,109 @@
+🚀 Advanced SQL Topics
+
+1. Subqueries & Nested Queries
+
+Subqueries in WHERE, FROM, and SELECT clauses
+
+Correlated subqueries
+
+EXISTS vs IN vs ANY vs ALL
+
+
+
+---
+
+2. Advanced Joins
+
+Self join (employees & managers example)
+
+Multi-table joins
+
+Join with aggregate functions
+
+
+
+---
+
+3. Views
+
+Creating and using views
+
+Updatable vs non-updatable views
+
+
+
+---
+
+4. Stored Procedures & Functions
+
+CREATE PROCEDURE and CALL
+
+Input/Output parameters
+
+Stored functions with RETURN
+
+
+
+---
+
+5. Triggers
+
+BEFORE INSERT, AFTER UPDATE triggers
+
+Real use cases: logging changes, auditing
+
+
+
+---
+
+6. Window Functions (Analytical Functions)
+
+ROW_NUMBER(), RANK(), DENSE_RANK()
+
+LEAD() and LAG()
+
+Running totals with SUM() OVER()
+
+
+
+---
+
+7. CTE (Common Table Expressions)
+
+WITH clause
+
+Recursive CTE (for hierarchical data like org charts)
+
+
+
+---
+
+8. Advanced Indexing
+
+Composite index
+
+Covering index
+
+Clustered vs non-clustered index (conceptual in MySQL)
+
+
+
+---
+
+9. Normalization & Denormalization
+
+1NF, 2NF, 3NF, BCNF
+
+When to use denormalization
+
+
+
+---
+
+10. Optimization
+
+Query execution plan (EXPLAIN)
+
+Optimize joins and indexes
+
+Avoiding subquery pitfalls
