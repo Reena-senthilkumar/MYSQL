@@ -1,0 +1,127 @@
+🌟 1️⃣ What is a Subquery?
+
+A subquery (also called a nested query) is a query inside another query.
+It helps you use the result of one query as input to another.
+
+👉 Syntax:
+
+SELECT column_name
+FROM table_name
+WHERE column_name operator (SELECT column_name FROM another_table WHERE condition);
+
+
+---
+
+🧠 Example Table: Employees
+
+emp_id	emp_name	department	salary
+
+1	Reena	HR	50000
+2	Rathi	IT	60000
+3	Vijay	HR	55000
+4	Sita	IT	65000
+5	John	Sales	45000
+6	Maya	HR	52000
+
+
+
+---
+
+🧩 Example 1: Simple Subquery (WHERE Clause)
+
+Q: Find employees whose salary is greater than the average salary of all employees.
+
+SELECT emp_name, salary
+FROM Employees
+WHERE salary > (SELECT AVG(salary) FROM Employees);
+
+👉 Inner query → finds average salary
+👉 Outer query → selects employees above that average
+
+Result:
+
+emp_name	salary
+
+Rathi	60000
+Sita	65000
+
+
+
+---
+
+🧩 Example 2: Subquery with IN
+
+Q: Find employees who work in the same department as ‘Reena’.
+
+SELECT emp_name, department
+FROM Employees
+WHERE department IN (SELECT department FROM Employees WHERE emp_name = 'Reena');
+
+Result:
+
+emp_name	department
+
+Reena	HR
+Vijay	HR
+Maya	HR
+
+
+
+---
+
+🧩 Example 3: Subquery in FROM Clause (Derived Table)
+
+Q: Find average salary of each department, but only show departments where the average salary is above 52000.
+
+SELECT department, avg_salary
+FROM (
+     SELECT department, AVG(salary) AS avg_salary
+     FROM Employees
+     GROUP BY department
+) AS dept_avg
+WHERE avg_salary > 52000;
+
+Result:
+
+department	avg_salary
+
+IT	62500
+HR	52333
+
+
+
+---
+
+🧩 Example 4: Correlated Subquery
+
+👉 A correlated subquery runs once per row of the outer query.
+
+Q: Find employees whose salary is greater than the average salary of their own department.
+
+SELECT emp_name, department, salary
+FROM Employees e
+WHERE salary > (
+    SELECT AVG(salary)
+    FROM Employees
+    WHERE department = e.department
+);
+
+Result:
+
+emp_name	department	salary
+
+Vijay	HR	55000
+Sita	IT	65000
+
+
+
+---
+
+🧭 Summary
+
+Type	Description	Example
+
+Single-row subquery	Returns one value	salary > (SELECT AVG(...))
+Multi-row subquery	Returns multiple values	IN, ANY, ALL
+Correlated subquery	Depends on outer query	WHERE department = e.department
+Subquery in FROM	Used as a temporary table	FROM (SELECT ...) AS alias
