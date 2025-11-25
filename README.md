@@ -1,116 +1,153 @@
-<table>
-  <tr>
-    <!-- Left Column: SQL Basics -->
-    <td width="50%" valign="top">
+📘 SQL Syllabus
+🌼 SQL Basics
 
-      <h2>📘 SQL Basics</h2>
+📂 Database Basics – DB intro, tables, views, indexes
 
-      <h3>1️⃣ Database Basics</h3>
-      • What is a database? <br>
-      • SQL introduction <br>
-      • Objects: Tables, Views, Indexes, Sequences
+🧱 SQL Categories
 
-      <h3>2️⃣ SQL Categories</h3>
-      • DDL – CREATE, ALTER, DROP <br>
-      • DML – INSERT, UPDATE, DELETE <br>
-      • DQL – SELECT <br>
-      • TCL – COMMIT, ROLLBACK <br>
-      • DCL – GRANT, REVOKE
+🔹 DDL: CREATE, ALTER, DROP
 
-      <h3>3️⃣ Basic Queries</h3>
-      • WHERE, ORDER BY, LIMIT <br>
-      • BETWEEN, IN, LIKE, IS NULL <br>
-      • AND, OR, NOT <br>
-      • CASE expressions
+🔹 DML: INSERT, UPDATE, DELETE
 
-      <h3>4️⃣ Functions</h3>
-      • SUM, AVG, COUNT, MAX, MIN <br>
-      • CONCAT, LENGTH, SUBSTRING <br>
-      • UPPER, LOWER, TRIM <br>
-      • NOW(), DATE_ADD(), DATE_FORMAT()
+🔹 DQL: SELECT
 
-      <h3>5️⃣ Grouping & Filtering</h3>
-      • GROUP BY <br>
-      • HAVING
+🔹 TCL: COMMIT, ROLLBACK, SAVEPOINT
 
-      <h3>6️⃣ Joins</h3>
-      • INNER, LEFT, RIGHT <br>
-      • FULL (concept) <br>
-      • SELF JOIN <br>
-      • CROSS JOIN
+🔹 DCL: GRANT, REVOKE
 
-      <h3>7️⃣ Constraints</h3>
-      • PRIMARY KEY, FOREIGN KEY <br>
-      • UNIQUE, NOT NULL <br>
-      • CHECK, DEFAULT
+🔍 Basic Query Concepts
 
-      <h3>8️⃣ Set Operations</h3>
-      • UNION, UNION ALL <br>
-      • INTERSECT, EXCEPT
+WHERE, ORDER BY, LIMIT
 
-      <h3>9️⃣ Transactions</h3>
-      • START TRANSACTION <br>
-      • COMMIT, ROLLBACK <br>
-      • SAVEPOINT <br>
-      • ACID properties
+BETWEEN, IN, LIKE, IS NULL
 
-      <h3>🔟 Index</h3>
-      • CREATE INDEX <br>
-      • Unique / Non-unique
+AND, OR, NOT
 
-    </td>
+CASE expressions
 
-    <!-- Right Column: Advanced SQL -->
-    <td width="50%" valign="top">
+🧮 Functions
 
-      <h2>🚀 Advanced SQL Topics</h2>
+SUM, AVG, COUNT, MAX, MIN
 
-      <h3>1️⃣ Subqueries</h3>
-      • WHERE, FROM, SELECT subqueries <br>
-      • Correlated subqueries <br>
-      • EXISTS vs IN vs ANY vs ALL
+CONCAT, LENGTH, SUBSTRING
 
-      <h3>2️⃣ Advanced Joins</h3>
-      • Self join (Employees ↔ Managers) <br>
-      • Multi-table joins <br>
-      • Joins with aggregates
+UPPER, LOWER, TRIM
 
-      <h3>3️⃣ Views</h3>
-      • CREATE VIEW <br>
-      • Updatable vs Non-updatable views
+NOW(), DATE_ADD(), DATE_FORMAT()
 
-      <h3>4️⃣ Stored Procedures & Functions</h3>
-      • CREATE PROCEDURE, CALL <br>
-      • IN/OUT parameters <br>
-      • Functions with RETURN
+📊 Grouping & Filtering
 
-      <h3>5️⃣ Triggers</h3>
-      • BEFORE / AFTER triggers <br>
-      • Logging & auditing use cases
+GROUP BY
 
-      <h3>6️⃣ Window Functions</h3>
-      • ROW_NUMBER(), RANK(), DENSE_RANK() <br>
-      • LEAD(), LAG() <br>
-      • SUM() OVER() for running totals
+HAVING
 
-      <h3>7️⃣ CTE (WITH Clause)</h3>
-      • Simple CTE <br>
-      • Recursive CTE (hierarchies)
+🔗 Joins
 
-      <h3>8️⃣ Advanced Indexing</h3>
-      • Composite index <br>
-      • Covering index <br>
-      • Clustered vs Non-clustered
+INNER, LEFT, RIGHT, FULL
 
-      <h3>9️⃣ Normalization</h3>
-      • 1NF, 2NF, 3NF, BCNF <br>
-      • When to denormalize
+SELF JOIN
 
-      <h3>🔟 Optimization</h3>
-      • EXPLAIN plan <br>
-      • Join optimization <br>
-      • Avoiding inefficient subqueries
+CROSS JOIN
 
+🔑 Constraints
+
+PRIMARY KEY, FOREIGN KEY
+
+UNIQUE, NOT NULL
+
+CHECK, DEFAULT
+
+🔀 Set Operations
+
+UNION, UNION ALL
+
+INTERSECT, EXCEPT
+
+🔐 Transactions
+
+START TRANSACTION, COMMIT, ROLLBACK
+
+ACID properties
+
+⚡ Indexes
+
+CREATE INDEX
+
+Unique / Non-unique
+
+🚀 Advanced SQL
+
+🌀 Subqueries
+
+WHERE, FROM, SELECT subqueries
+
+Correlated subqueries
+
+EXISTS vs IN vs ANY vs ALL
+
+🔗 Advanced Joins
+
+Self join (employee–manager)
+
+Multi-table joins
+
+Joins with aggregates
+
+👁️ Views
+
+CREATE VIEW
+
+Updatable vs non-updatable
+
+🛠️ Stored Procedures & Functions
+
+CREATE PROCEDURE, CALL
+
+IN/OUT parameters
+
+RETURN functions
+
+🔥 Triggers
+
+BEFORE / AFTER triggers
+
+Logging & audit use cases
+
+📈 Window Functions
+
+ROW_NUMBER(), RANK(), DENSE_RANK()
+
+LEAD(), LAG()
+
+SUM() OVER() (running totals)
+
+🧩 CTE (WITH Clause)
+
+Basic CTE
+
+Recursive CTE
+
+⚙️ Advanced Indexing
+
+Composite index
+
+Covering index
+
+Clustered vs Non-clustered
+
+🧠 Normalization
+
+1NF, 2NF, 3NF, BCNF
+
+When to denormalize
+
+🔍 Optimization
+
+EXPLAIN query plan
+
+Join optimization
+
+Avoiding slow subqueries
       <br>
       👉 After completing these, you're at **Expert SQL Level** 🚀
 
