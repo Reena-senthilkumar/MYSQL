@@ -1,0 +1,80 @@
+1. What is a View?
+A View is a virtual table created from an existing table.
+
+CREATE VIEW view_name AS
+SELECT columns FROM table;
+
+
+View does not store data;
+it only stores the SELECT query logic.
+
+  Is a View a Table?
+
+A view LOOKS like a table,
+but it is NOT a real physical table.
+
+It is only a virtual table created from an existing table.
+
+  Can we 'print' the student table from the view?
+✔️ YES
+
+    there are tow types of views
+    Updatable Views vs Non-Updatable Views
+
+Some views allow INSERT, UPDATE, DELETE.
+Some do NOT allow modification.
+
+  ✔ UPDATABLE VIEWS
+
+These views allow:
+
+INSERT
+
+UPDATE
+
+DELETE
+
+on the view → which updates the original table.
+
+📌 Conditions for an Updatable View
+
+A view is updatable only if the SELECT query is simple:
+
+✔ Based on one table
+✔ No group by
+✔ No having
+✔ No distinct
+✔ No aggregate functions (SUM, AVG…)
+✔ No set operations (UNION, INTERSECT…)
+✔ No subqueries in SELECT
+✔ No joins
+✔ No expressions on columns
+
+🎯 Example: Updatable View
+
+Table: Employees
+
+View:
+
+/*CREATE VIEW emp_hr AS
+SELECT emp_id, emp_name, salary
+FROM Employees
+WHERE department = 'HR';*/
+
+
+This view is updatable.
+
+Because it is:
+
+From one table
+
+Simple WHERE condition
+
+So you can do:
+
+/*UPDATE emp_hr
+SET salary = 60000
+WHERE emp_id = 1;*/
+
+
+This changes the original table.
