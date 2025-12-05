@@ -1,0 +1,40 @@
+🔥 Main Differences (Super Easy Table)
+Feature	Stored Procedure	Function
+Return value	0 or many	Only 1
+Used in SELECT	❌ No	✔ Yes
+Insert/Update/Delete	✔ Allowed	❌ Not Allowed
+Output parameters	✔ Yes	❌ No
+Use case	Complex logic	Calculations
+🌟 Real-Life Example (Easy)
+Stored Procedure → Like a recipe
+
+It does many steps:
+
+cut veggies
+
+fry
+
+boil
+
+serve
+
+Function → Like a calculator
+
+One input, one output:
+
+5 + 5 → 10
+
+salary × 0.10 → bonus
+
+⭐ Quick Questions (Answer if you want to test yourself)
+
+Q1:
+Can a function return multiple values? (Yes/No)
+
+Q2:
+Can a stored procedure be used inside a SELECT? (Yes/No)
+
+Q3:
+Which one allows INSERT?
+A) Procedure
+B) Function
