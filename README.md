@@ -1,3 +1,5 @@
+
+
 ## 📘 SQL Basics — Everything You Should Know
 
 ### 1️⃣ Database Basics
